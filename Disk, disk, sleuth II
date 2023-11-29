@@ -1,0 +1,7 @@
+bài này dùng leuthkit là được
+tôi dùng mấy lần lệnh fls mà lỗi k được, sau khi clear hết làm lại thì được
+tôi dùng lệnh fls -r -p -o 2048 dds2-alpine.flag.img | grep down-at-the-bottom.txt
+để liệt kê các tệp của đĩa và grep để tìm cái file flag
+tìm xong ra đc số hiệu file thì ta dùng lệnh icat :
+icat -o 2048 dds2-alpine.flag.img 18291
+để đọc nội dung

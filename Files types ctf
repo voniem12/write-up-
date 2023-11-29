@@ -1,0 +1,6 @@
+giải bài files types trong picoctf
+bài này phải giải nén nhiều lần 
+mỗi lần giải nén xong phải dùng lệnh file để kiểm tra loại file mới là gì
+đổi tên cho đúng loại file, chỉ để file đã đổi tên còn file nguyên bản xóa đi,  rồi xóa file cũ rồi giải nén tiếp
+làm tầm chục lần là ok
+ 

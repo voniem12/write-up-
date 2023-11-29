@@ -1,0 +1,4 @@
+là 1 file pcap, tôi định dùng lệnh grep để tìm nhưng được báo đây là file nhị phân
+tôi dùng strings + tên file | grep pico  để tìm nhưng cũng chỉ tìm được 1 đống upico hoặc k hiện ra cái gì
+tôi đọc lại đề bài nó bảo theo dõi luồng, tôi thấy khá nhiều giao thức UDP
+nên lọc nó ra để xem. xem từng cái 1 thì có flag

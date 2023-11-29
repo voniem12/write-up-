@@ -1,0 +1,7 @@
+wow lại 1 bài đĩa, tôi dùng sleuthkit nhưng lệnh mmls k được nên tôi đổi tên nó thành .img mà nó vẫn thế
+dùng fls để liệt kê các file nó tìm được, dùng icat vào trích xuất 1 cái để đọc thì thấy nó bảo " Nothing to see here! But you may want to look here -->" nghĩa là flag ở bên cạnh ngay đó nhưng nó k hiển thị được
+dùng strings + grep như mọi khi định tìm pico nhưng k được
+bây giờ sao đây, tôi dùng strings -a -t x suspicious.dd.sda1.img | grep "Nothing to see here! But you may want to look here"
+cái lệnh này sẽ hiển thị địa chỉ bắt đầu của cái chuỗi kia
+sau đó từ cái địa chỉ đó ta sẽ dùng lệnh hiện ra giá trị hex của nội dung và 1 phần dạng kí tự ở bên trong 200 byte là có flag
+xxd -s 0x200400 -l 200 suspicious.dd.sda1.img

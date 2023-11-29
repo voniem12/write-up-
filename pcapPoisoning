@@ -1,0 +1,2 @@
+bài này dùng wireshark tìm k thấy vì nó mã hóa dưới dạng nhị phân nên 1 số chỗ wireshark k hiển thị được
+vào terminal dùng lệnh strings + tên file | grep "từ cần tìm" là ra

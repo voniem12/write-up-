@@ -1,0 +1,2 @@
+đọc cái gợi ý là biết ngay cần kiểm tra loại file là gì rồi
+sau khi kiểm tra thì phát hiện nó là file hình ảnh png nên dùng lệnh cp đổi tên nó thành .png , mở file ra là xem được flag

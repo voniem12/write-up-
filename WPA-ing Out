@@ -1,0 +1,6 @@
+đề bài gợi ý dùng Aircrack-ng nên tôi dùng nó, lệnh aircrack-ng -r + tên file
+sẽ tìm sho tôi được BSSiD của mạng mục tiêu 
+sau đó tôi lại tải cái file rockyou.txt chứa mk phổ biến về
+dùng lệnh aircrack-ng -a2 -b [BSSID] -w rockyou.txt + tên file 
+để thử hết đống mk đấy
+và thế là xong

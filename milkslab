@@ -1,0 +1,5 @@
+bài này khá ảo, khi ấn vào tôi thấy 1 web mà di chuột hình ảnh sẽ chuyển động
+tôi vào web deverlop xem thì thấy 1 file hình ảnh trong đó, các hình ảnh liên tiếp tạo thành động tác, thấy nghi nghi nên tôi ấn vào và tả về bằng wget
+tôi có tìm thì thấy zsteg sẽ giúp tìm thấy các thông tin ẩn trong ảnh nên tải về dùng
+hình ảnh quá lớn nên tôi dùng lệnh dd để chia nó làm đôi để zsteg có thể hoạt động
+dùng zsteg và tìm thấy flag
