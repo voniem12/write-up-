@@ -1,0 +1,7 @@
+chả có gợi ý gì, thật là ảo -.-
+tôi dùng mấy câu lệnh quen thuộc như mmls, fls ,icat mà cx chả được gì, grep cũng k luôn
+cuối cùng tìm được 1 công cụ là autopsy có sẵn trong kali mở nó hiện ra giao diện dòng lệnh - k bt dùng dòng lệnh -.-
+cop cái link rồi paste vô firefox chứ edge k chạy được 
+vào được giao diện đồ họa của autopsy trên trình duyệt, chọn open file sau đó trong đó tìm được add a new disk thì cop cái đường dẫn đến file img về
+chọn phân tích
+nó phân tích ra có mấy cái đấy, vào từng cái 1 rồi trong đó search tên file là flag, có thì ấn vào là có flag
