@@ -1,0 +1,13 @@
+bài này tải về được 1 file âm thanh, mở ra nghe thì thấy nó toàn những âm tín hiệu
+kết hợp với gợi ý đề bài là truyền hình ảnh từ mặt trăng về trái đất nên có thể kết luận nó là muốn mik chuyển từ âm thanh sang hình ảnh lấy flag
+tôi tìm hiểu ra được thì truyền bằng sóng radio, cái quan trọng là cần tìm được công cụ chuyển đổi 
+dùng cái QSSTV này để chuyển đổi
+sudo apt-get install qsstv # lệnh này tải nó về 
+pactl load-module module-null-sink sink_name=virtual-cable
+
+sau khi cài đặt xong thì dùng cái lệnh này "pavucontrol" để vào cấu hình  output devices xem ok chưa
+sau đó mở ứng dụn lên vào option --> configuration -->sound --> chọn cả input và output đều là pulseAudio
+vào lại cái lệnh pavucontrol vào phần recording chọn monitor ò null output
+cấu hình trên là để ứng dụng sẽ chỉ nghe tiếng phát của hệ thống
+ok rồi sau đó ta vào lại ứng dụng và sau đó ta nhập câu lệnh paplay -d virtual-cable + tên file để phát âm thanh
+ứng dụng sẽ nghe được nó và sẽ chuyển nó thành hình ảnh
