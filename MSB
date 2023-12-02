@@ -1,0 +1,6 @@
+đề bài cho rằng cái bit quan trọng nhất MSB bị sai , nên tôi xem cái bit đấy như nào
+ở phần tag của đề t thấy để steganography nên đoán là dùng cái công cụ hình ảnh này
+tra gg thử thì dùng cái công cụ này toàn ra cái qq gì đấy, chả có tác dụng gì
+trong đống tra gg tìm được cái stegsolve online dùng thì tôi nghĩ bit quan trọng nhất và là bit sửa lỗi là bit thứ 8 nên tôi trích xuất bit thứ 8 ra xem thì thấy là 1 đoạn văn bản nhưng cũng k thấy được cờ dù tôi đã cop nó ra text để ctrl F, hơi ảo
+tôi đọc write up thì thấy họ dùng bản app nên tôi tải nó về dùng
+dùng ở bản app thì nó hiển thị rõ hết, cop là file text rồi tìm được flag
