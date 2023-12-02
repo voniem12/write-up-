@@ -1,0 +1,13 @@
+đề cho 1 file nén bên trong là file văn bản cần mật khẩu để mở
+và 1 file pcap- t ghét file disk img với file pcap  
+giờ sao
+nó bảo tìm mk trong file pcap để mở
+mở cái file pcap thì thấy khá nhiều luồng ethernet- thấy khá lạ nên nghi cờ trong đó
+ở nội dung 43 ethernet  thấy nó hỏi is this the flag nên k phải rồi
+47 ethernet thấy có 1 đoạn liên quan flag mà cop vào cx k được, cho vào decode cx k ra cái gì
+49 ethernet thì bảo là tìm file khác xem
+chả có cái tích sự gì
+nhìn kĩ lại thì cuối cái đống 47 ethernet có 1 cái 70 ethernet, khá lạ nên nguy cơ flag cao
+cop ra cho vào mở khóa thì cx k được, cho vào decode base64 thì ra được 1 nửa flag
+lấy cái 1 nửa flag cho vào mở khóa thì thành công
+giờ mới hiểu ý của cái gợi ý là gì đậu xanh nó
