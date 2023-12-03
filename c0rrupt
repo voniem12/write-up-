@@ -1,0 +1,18 @@
+đóe biết viết write up bài này sao nữa
+nhìn tưởng dễ chỉ cần đổi tên là ăn được mà mất cả buổi chiều vẫn k hiểu dù đã đọc write up
+tôi đổi đuôi thành các kiểu txt, doc, bin vẫn k được nên tôi nghi nó là file ảnh, tôi lại đổi nó thành png vẫn méo được, dùng binwalk thì thấy nó có 1 file nén nhưng cx chả đc gì
+cuối cùng đọc write up thấy đúng là file png thật, tôi vào wxhexa để sửa lại các thông số của ảnh như 8 byte đầu, mấy byte IHRD
+vẫn k được
+tôi lại dùng pngcheck để tìm lỗi thì thấy lỗi pHYs , vâng lại phải sửa lỗi
+theo như nó nói thì cái nó tính ra khác với cái nó kì vọng vậy thì đi sửa lỗi thôi 
+lệnh này xxd -g 1 -s 0x3e -l $((4+4+9+4)) flag.png hiển thị dạng hexa chỗ lỗi
+printf '\x00' | dd of=flag.png bs=1 seek=70 count=1 conv=notrunc
+lệnh trên sửa cái byte hexa aa thành 00
+dùng pngcheck kiểm tra lại lỗi quá dài 
+vậy thì xem sau mấy byte pHYs là cái gì mà quá dài 
+xxd -g 1 -s 0x53 -l 8 flag.png 
+có vẻ 2 cái aa aa làm cho nó quá dài , đổi thử hết nó về 00 00 xem sao
+printf 'IDAT' | dd of=flag.png bs=1 seek=87 count=4 conv=notrunc
+printf '\x00\x00' | dd of=flag.png bs=1 seek=83 count=2 conv=notrunc
+cái dòng lệnh print IDAT chả hiểu gì cả
+dùng pcgcheck là ok rồi, mở ảnh ra lấy flag thôi
