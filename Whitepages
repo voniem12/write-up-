@@ -1,0 +1,16 @@
+bài này trông thế mà nhọc vl
+mở ra chả có cái gì để đọc được
+tôi cho nó vào wxhexa mà nó toàn ra cái cl gì k , dùng câu lệnh xxd để nó hiển thị dưới dạng hexa chuẩn trong terminal
+data hiện ra là dạng khoảng trắng và chấm -.- đọc wireup mới biết là phải biến thành nhị phân
+viết 1 đoạn code python biến nó thành nhị phân rồi từ nhị phân chuyển thành text là ra flag ,code đây :
+from pwd import*
+with open("whitepages.txt","rb") as bin_file:
+   from pwn import *
+
+with open("whitepages.txt", "rb") as bin_file:
+    data = bytearray(bin_file.read()) 
+    data = data.replace(b'\xe2\x80\x83', b'0')
+    data = data.replace(b'\x20', b'1')
+    data = data.decode("ascii")
+    print(unbits(data))
+
