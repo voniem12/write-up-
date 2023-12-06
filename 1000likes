@@ -1,0 +1,14 @@
+đọc cái tên đề, tải về và đọc cái gợi ý là đã biết nó bắt mik giải nén 100 lần để ra flag, vcl thật
+dùng code python sau để tạo vòng lặp giải nén : 
+
+import tarfile: Import thư viện tarfile, một thư viện trong Python cho phép làm việc với các file được nén bằng định dạng tar.
+
+for i in range(999, 0, -1): Dùng vòng lặp for để lặp từ 999 đến 1, giảm đi 1 mỗi lần lặp.
+
+filename = str(i) + '.tar': Tạo tên file dựa trên giá trị của i. Ví dụ, nếu i là 999, thì filename sẽ là "999.tar".
+
+tar = tarfile.open(filename): Mở file tar để chuẩn bị giải nén.
+
+tar.extractall(): Giải nén toàn bộ nội dung của file tar vào thư mục hiện tại. Lưu ý rằng giải nén sẽ diễn ra trong thư mục mà script đang chạy.
+
+tar.close(): Đóng file tar sau khi đã giải nén nội dung.
