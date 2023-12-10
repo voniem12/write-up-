@@ -1,0 +1,38 @@
+bài này cho 1 file thực thi và 1 file ảnh 
+tôi đọc cái gợi ý k hiểu lắm
+dùng zsteg để đọc flag dấu trong ảnh, thì được 1 đoạn flag bị mã hóa 
+tôi nghĩ là cái file thực thi kia là để mã hóa flag và nhét nó vào ảnh, nên t cần đọc code của nó và đẩy ngược flag
+tôi cho nó vào ida mà toàn mã máy nên vứt vào ghindra ngon hơn ra code c
+tôi đã biết được từ vị trí thứ 6 đến thứ 14 flag nó tăng 5 trong mã ascii và vị trí 15 nó lại giảm 3
+nên làm ngược lại ra flag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
